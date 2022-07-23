@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+
+body {
+  font-family: 'Montserrat Alternates' !important;
+  background-color: #131722 !important;
+  overflow-x: hidden;
+  color: white !important;
+  overflow-y: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a, a:hover {
+  color: white !important;
+  text-decoration: none !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+a.askForLogin {
+  text-decoration: underline !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.darkMode {
+  background-color: #131722 !important;
+  color: white !important;
+}
+
+.lightMode {
+  background-color: white !important;
+  color: #131722 !important;
+}
+
+input {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.border-line {
+  height: 1px;
+  background-color: rgb(119, 118, 118) !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.layer {
+  background-color: rgba(0,0,0,0.8);
+  opacity: 0;
+  top: 0;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: all 1s;
+  padding: 30px 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.movie:hover .layer,
+.tv:hover .layer,
+.person:hover .layer {
+  opacity: 0.8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.scale {
+  transition: all 0.5s;
+  z-index: 8888;
+}
+.scale:hover {
+  transform: scale(1.1 , 1.1);
+}
+
+.pagination a {
+  background-color: transparent !important;
+  color: white !important;
+  cursor: pointer;
+  margin: auto;
+}
+
+.loading {
+  transition: all 2s;
+  height: 100% !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 88888;
+  background-color: #131722 !important;
 }

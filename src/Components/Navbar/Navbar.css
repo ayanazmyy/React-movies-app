@@ -1,0 +1,22 @@
+nav {
+    background-color: #131722 !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 30px !important;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.logout {
+    cursor: pointer;
+}
